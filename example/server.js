@@ -2,8 +2,7 @@ const express = require('express');
 const fileUpload = require('../lib/index');
 const app = express();
 
-const PORT
-const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 8000;
+const PORT = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 8000;
 app.use('/form', express.static(__dirname + '/index.html'));
 
 // default options
